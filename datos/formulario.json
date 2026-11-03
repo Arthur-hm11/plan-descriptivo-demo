@@ -1,0 +1,618 @@
+{
+  "_nota": "Campos de cada sección. 'guia' = nombre del rubro en la Guía (datos/guia.json) para mostrar su ayuda; 'fila' = renglón de la hoja Matriz del Excel oficial (para exportar); 'prellenado' = toma el valor fijo de la Matriz y se puede editar; 'soloLectura' = no se puede cambiar. 'grupo' = bloque donde aparece; 'ancho' = columnas que ocupa de 6 (6 = renglón completo, 3 = mitad, 2 = tercio). 'inicial' = texto con el que empieza el campo (no cuenta como lleno); 'temas' = lista de un renglón por tema (hasta 'maximo'); 'filas' = alto del área de texto. 'predeterminado' = valor con el que empieza y sí cuenta como lleno; 'detalle_temas' = una tarjeta por tema (nombre, horas, subtemas) según la lista de 'origen'; 'vinculados' = listas que se recortan junto con los temas. 'por_tema' = una tarjeta por tema con listas desplegables ('elementos': 'cantidad' de listas, 'minimo' obligatorias, 'corto' = nombre de cada lista, 'columnas' del Excel desde 'fila' = Tema 1; 'tipo': 'porcentaje' = casilla de %; 'enLinea' = los datos en un renglón; 'extra' = tarjeta opcional al final (fila propia en el Excel); 'suma' = el total de esa clave debe dar 'total').",
+  "secciones": [
+    {
+      "id": "datos_generales",
+      "numero": "I",
+      "titulo": "Datos generales",
+      "campos": [
+        {
+          "id": "nombre_actividad",
+          "etiqueta": "Nombre de la actividad de formación (curso, diplomado, taller)",
+          "tipo": "texto",
+          "guia": "Nombre de la actividad de formación",
+          "fila": 2,
+          "obligatorio": true,
+          "grupo": "identificacion",
+          "ancho": 6
+        },
+        {
+          "id": "institucion",
+          "etiqueta": "Nombre de la Institución",
+          "tipo": "texto",
+          "guia": "Nombre de la Institución",
+          "fila": 3,
+          "obligatorio": true,
+          "grupo": "identificacion",
+          "ancho": 3
+        },
+        {
+          "id": "enfoque",
+          "etiqueta": "Enfoque",
+          "tipo": "lista",
+          "lista": "enfoque",
+          "guia": "Enfoque",
+          "fila": 4,
+          "obligatorio": true,
+          "grupo": "identificacion",
+          "ancho": 3
+        },
+        {
+          "id": "duracion_horas",
+          "etiqueta": "Duración total estimada (en horas)",
+          "tipo": "numero",
+          "min": 1,
+          "guia": "Duración total estimada",
+          "fila": 5,
+          "obligatorio": true,
+          "grupo": "fechas",
+          "ancho": 2
+        },
+        {
+          "id": "fecha_elaboracion",
+          "etiqueta": "Fecha de elaboración",
+          "tipo": "fecha",
+          "guia": "Fecha de elaboración",
+          "fila": 6,
+          "obligatorio": true,
+          "grupo": "fechas",
+          "ancho": 2
+        },
+        {
+          "id": "fecha_pilotaje",
+          "etiqueta": "Fecha propuesta de pilotaje",
+          "tipo": "fecha",
+          "guia": "Calendarización",
+          "fila": 7,
+          "obligatorio": true,
+          "grupo": "fechas",
+          "ancho": 2
+        },
+        {
+          "id": "publico_objetivo",
+          "etiqueta": "Público objetivo o perfil del participante",
+          "tipo": "area",
+          "guia": "Público objetivo o perfil de la persona servidora pública participante",
+          "fila": 8,
+          "prellenado": true,
+          "obligatorio": true,
+          "grupo": "prellenados",
+          "ancho": 6
+        },
+        {
+          "id": "participantes_grupo",
+          "etiqueta": "Número de participantes por grupo",
+          "tipo": "texto",
+          "guia": "Número de participantes por grupo",
+          "fila": 9,
+          "prellenado": true,
+          "grupo": "prellenados",
+          "ancho": 2
+        },
+        {
+          "id": "universo_total",
+          "etiqueta": "Universo total",
+          "tipo": "texto",
+          "guia": "Universo total",
+          "fila": 10,
+          "prellenado": true,
+          "grupo": "prellenados",
+          "ancho": 2
+        },
+        {
+          "id": "modalidad",
+          "etiqueta": "Modalidad",
+          "tipo": "texto",
+          "guia": "Modalidad",
+          "fila": 11,
+          "prellenado": true,
+          "soloLectura": true,
+          "grupo": "prellenados",
+          "ancho": 2
+        },
+        {
+          "id": "plataforma",
+          "etiqueta": "Plataforma donde se impartirá",
+          "tipo": "texto",
+          "guia": "Lugar o plataforma donde se impartirá",
+          "fila": 12,
+          "prellenado": true,
+          "grupo": "prellenados",
+          "ancho": 6
+        },
+        {
+          "id": "responsable_diseno",
+          "etiqueta": "Responsable del diseño instruccional",
+          "tipo": "texto",
+          "guia": "Responsable del diseño de la actividad",
+          "fila": 13,
+          "obligatorio": true,
+          "grupo": "responsables",
+          "ancho": 3
+        },
+        {
+          "id": "correo_responsable",
+          "etiqueta": "Correo de la persona responsable del diseño de la actividad",
+          "tipo": "correo",
+          "guia": "Responsable del diseño de la actividad",
+          "fila": 14,
+          "obligatorio": true,
+          "grupo": "responsables",
+          "ancho": 3
+        },
+        {
+          "id": "responsable_contenidos",
+          "etiqueta": "Responsable de los contenidos del curso",
+          "tipo": "area",
+          "guia": "Responsable de los contenidos del curso",
+          "fila": 15,
+          "obligatorio": true,
+          "grupo": "responsables",
+          "ancho": 6
+        },
+        {
+          "id": "recomendaciones",
+          "etiqueta": "Recomendaciones en general para la persona participante",
+          "tipo": "area",
+          "guia": "Recomendaciones en general para la persona participante",
+          "fila": 16,
+          "prellenado": true,
+          "grupo": "prellenados",
+          "ancho": 6
+        }
+      ],
+      "grupos": [
+        {
+          "id": "identificacion",
+          "titulo": "Identificación del curso"
+        },
+        {
+          "id": "fechas",
+          "titulo": "Duración y fechas"
+        },
+        {
+          "id": "responsables",
+          "titulo": "Responsables"
+        },
+        {
+          "id": "prellenados",
+          "titulo": "Datos prellenados",
+          "plegable": true,
+          "nota": "Vienen definidos por la Escuela de Buen Gobierno. Revísalos y ajústalos solo si tu curso lo requiere."
+        }
+      ]
+    },
+    {
+      "id": "fundamentacion",
+      "numero": "II",
+      "titulo": "Fundamentación pedagógica",
+      "grupos": [
+        {
+          "id": "proposito",
+          "titulo": "Propósito y justificación"
+        },
+        {
+          "id": "objetivos",
+          "titulo": "Objetivos"
+        },
+        {
+          "id": "opcional",
+          "titulo": "Competencias relacionadas (opcional)",
+          "plegable": true,
+          "nota": "Este rubro está oculto en la Matriz del Excel; llénalo solo si tu curso lo requiere."
+        }
+      ],
+      "campos": [
+        {
+          "id": "proposito_general",
+          "etiqueta": "Propósito general",
+          "tipo": "area",
+          "filas": 6,
+          "guia": "Propósito general",
+          "fila": 17,
+          "obligatorio": true,
+          "grupo": "proposito",
+          "ancho": 6
+        },
+        {
+          "id": "justificacion",
+          "etiqueta": "Justificación",
+          "tipo": "area",
+          "filas": 8,
+          "guia": "Justificación",
+          "fila": 18,
+          "obligatorio": true,
+          "grupo": "proposito",
+          "ancho": 6
+        },
+        {
+          "id": "objetivo_general",
+          "etiqueta": "Objetivo general",
+          "tipo": "area",
+          "filas": 5,
+          "guia": "Objetivo general",
+          "fila": 19,
+          "obligatorio": true,
+          "grupo": "objetivos",
+          "ancho": 6,
+          "inicial": "Al finalizar el curso, las personas participantes serán capaces de: "
+        },
+        {
+          "id": "objetivos_especificos",
+          "etiqueta": "Objetivos específicos",
+          "tipo": "temas",
+          "prefijo": "Tema",
+          "maximo": 8,
+          "guia": "Objetivos específicos",
+          "fila": 20,
+          "obligatorio": true,
+          "grupo": "objetivos",
+          "ancho": 6,
+          "ayuda": "Escribe un objetivo por cada tema del curso (hasta 8).",
+          "vinculados": [
+            "temas_detalle",
+            "estrategia_temas",
+            "evaluacion_temas"
+          ]
+        },
+        {
+          "id": "competencias",
+          "etiqueta": "Competencias relacionadas",
+          "tipo": "area",
+          "filas": 3,
+          "guia": "Competencias relacionadas",
+          "fila": 28,
+          "grupo": "opcional",
+          "ancho": 6
+        }
+      ]
+    },
+    {
+      "id": "estructura",
+      "numero": "III",
+      "titulo": "Estructura académica del contenido",
+      "grupos": [
+        {
+          "id": "programa",
+          "titulo": "Estructura del programa"
+        },
+        {
+          "id": "temas",
+          "titulo": "Temas del curso",
+          "nota": "Aparece una tarjeta por cada objetivo específico que escribiste en la sección II. Para agregar o quitar temas, ve a la sección II."
+        }
+      ],
+      "campos": [
+        {
+          "id": "estructura_tipo",
+          "etiqueta": "Estructurado por",
+          "tipo": "lista",
+          "lista": "estructura",
+          "predeterminado": "Temas",
+          "guia": "Estructurado por",
+          "fila": 29,
+          "obligatorio": true,
+          "grupo": "programa",
+          "ancho": 3
+        },
+        {
+          "id": "temas_detalle",
+          "etiqueta": "Temas",
+          "tipo": "detalle_temas",
+          "origen": "objetivos_especificos",
+          "maxSubtemas": 15,
+          "guias": {
+            "nombre": "Contenido temático",
+            "horas": "Duración de cada tema",
+            "subtemas": "Subtemas"
+          },
+          "fila": 30,
+          "obligatorio": true,
+          "grupo": "temas",
+          "ancho": 6
+        }
+      ]
+    },
+    {
+      "id": "estrategia",
+      "numero": "IV",
+      "titulo": "Estrategia didáctica",
+      "grupos": [
+        {
+          "id": "temas",
+          "titulo": "Estrategia de cada tema",
+          "nota": "Aparece una tarjeta por cada tema. Elige de las listas oficiales; la segunda actividad y el segundo recurso son opcionales. Para agregar o quitar temas, ve a la sección II."
+        }
+      ],
+      "campos": [
+        {
+          "id": "estrategia_temas",
+          "etiqueta": "Estrategia didáctica por tema",
+          "tipo": "por_tema",
+          "origen": "objetivos_especificos",
+          "nombres": "temas_detalle",
+          "elementos": [
+            { "clave": "metodologia", "etiqueta": "Metodología de enseñanza y aprendizaje", "lista": "metodologias", "cantidad": 1, "minimo": 1, "guia": "Metodología de enseñanza y aprendizaje", "columnas": ["C"] },
+            { "clave": "actividades", "etiqueta": "Actividades de aprendizaje", "corto": "Actividad", "lista": "actividades", "cantidad": 2, "minimo": 1, "guia": "Actividades de aprendizaje", "columnas": ["D", "E"] },
+            { "clave": "recursos", "etiqueta": "Recursos multimedia", "corto": "Recurso", "lista": "recursos", "cantidad": 2, "minimo": 1, "guia": "Recursos multimedia", "columnas": ["F", "G"] }
+          ],
+          "fila": 167,
+          "obligatorio": true,
+          "grupo": "temas",
+          "ancho": 6
+        }
+      ]
+    },
+    {
+      "id": "evaluacion",
+      "numero": "V",
+      "titulo": "Evaluación del aprendizaje",
+      "grupos": [
+        {
+          "id": "temas",
+          "titulo": "Evaluación de cada tema",
+          "nota": "Aparece una tarjeta por cada tema. Al final puedes agregar una evaluación final (por ejemplo, un examen). La ponderación de todo junto debe sumar exactamente 100 %."
+        },
+        {
+          "id": "prellenados",
+          "titulo": "Datos prellenados",
+          "plegable": true,
+          "nota": "Vienen definidos por la Escuela de Buen Gobierno. Revísalos y ajústalos solo si tu curso lo requiere."
+        }
+      ],
+      "campos": [
+        {
+          "id": "evaluacion_temas",
+          "etiqueta": "Evaluación del aprendizaje por tema",
+          "tipo": "por_tema",
+          "origen": "objetivos_especificos",
+          "nombres": "temas_detalle",
+          "enLinea": true,
+          "elementos": [
+            { "clave": "evidencia", "etiqueta": "Evidencia de aprendizaje", "lista": "evidencias", "cantidad": 1, "minimo": 1, "guia": "Evidencias de aprendizaje", "columnas": ["C"] },
+            { "clave": "instrumento", "etiqueta": "Instrumento de evaluación", "lista": "instrumentos", "cantidad": 1, "minimo": 1, "guia": "Instrumentos de evaluación", "columnas": ["E"] },
+            { "clave": "ponderacion", "etiqueta": "Ponderación", "tipo": "porcentaje", "cantidad": 1, "minimo": 1, "guia": "Ponderación", "columnas": ["G"] }
+          ],
+          "extra": {
+            "titulo": "Evaluación final (opcional)",
+            "nota": "Por ejemplo, un examen final que incluya todos los temas. Si la usas, llena los tres datos.",
+            "fila": 184
+          },
+          "suma": { "clave": "ponderacion", "total": 100 },
+          "fila": 176,
+          "obligatorio": true,
+          "grupo": "temas",
+          "ancho": 6
+        },
+        {
+          "id": "criterios_acreditacion",
+          "etiqueta": "Criterios específicos de acreditación",
+          "tipo": "area",
+          "filas": 3,
+          "guia": "Criterios específicos de acreditación",
+          "fila": 185,
+          "prellenado": true,
+          "obligatorio": true,
+          "grupo": "prellenados",
+          "ancho": 6
+        },
+        {
+          "id": "retroalimentacion",
+          "etiqueta": "Retroalimentación",
+          "tipo": "area",
+          "filas": 3,
+          "guia": "Retroalimentación",
+          "fila": 186,
+          "prellenado": true,
+          "obligatorio": true,
+          "grupo": "prellenados",
+          "ancho": 6
+        }
+      ]
+    },
+    {
+      "id": "material",
+      "numero": "VI",
+      "titulo": "Material de apoyo y cierre",
+      "grupos": [
+        {
+          "id": "referencias",
+          "titulo": "Referencias iniciales",
+          "nota": "Escribe una referencia por renglón, en formato APA 7.ª edición: autor, año de publicación, título de la obra y fuente (con su enlace, si lo tiene)."
+        },
+        {
+          "id": "prellenados",
+          "titulo": "Datos prellenados",
+          "plegable": true,
+          "nota": "Vienen definidos por la Escuela de Buen Gobierno. Revísalos y ajústalos solo si tu curso lo requiere."
+        }
+      ],
+      "campos": [
+        {
+          "id": "referencias",
+          "etiqueta": "Referencias iniciales",
+          "tipo": "area",
+          "filas": 8,
+          "guia": "Referencias iniciales",
+          "fila": 187,
+          "obligatorio": true,
+          "grupo": "referencias",
+          "ancho": 6
+        },
+        {
+          "id": "encuesta_satisfaccion",
+          "etiqueta": "Encuesta de satisfacción",
+          "tipo": "area",
+          "filas": 2,
+          "guia": "Encuesta de satisfacción",
+          "fila": 188,
+          "prellenado": true,
+          "obligatorio": true,
+          "grupo": "prellenados",
+          "ancho": 6
+        }
+      ]
+    },
+    {
+      "id": "autorizacion",
+      "numero": "VII",
+      "titulo": "Autorización",
+      "grupos": [
+        {
+          "id": "elaboro_di",
+          "titulo": "Elaboró diseño instruccional",
+          "nota": "Escribe el nombre completo y el puesto de cada persona. La firma se pone a mano en la hoja impresa del Plan."
+        },
+        {
+          "id": "reviso_di",
+          "titulo": "Revisó diseño instruccional"
+        },
+        {
+          "id": "contenidos",
+          "titulo": "Elaboró y revisó contenidos"
+        },
+        {
+          "id": "identidad",
+          "titulo": "Elaboró diseño de identidad gráfica"
+        },
+        {
+          "id": "autorizo_di",
+          "titulo": "Autorizó diseño instruccional"
+        },
+        {
+          "id": "autorizo_contenidos",
+          "titulo": "Autorizó contenidos"
+        }
+      ],
+      "campos": [
+        {
+          "id": "firma_elaboro_di_nombre",
+          "etiqueta": "Nombre completo",
+          "tipo": "texto",
+          "guia": "Elaboró diseño instruccional o de identidad gráfica",
+          "fila": 189,
+          "obligatorio": true,
+          "grupo": "elaboro_di",
+          "ancho": 3
+        },
+        {
+          "id": "firma_elaboro_di_puesto",
+          "etiqueta": "Puesto",
+          "tipo": "texto",
+          "guia": "Elaboró diseño instruccional o de identidad gráfica",
+          "fila": 190,
+          "obligatorio": true,
+          "grupo": "elaboro_di",
+          "ancho": 3
+        },
+        {
+          "id": "firma_reviso_di_nombre",
+          "etiqueta": "Nombre completo",
+          "tipo": "texto",
+          "guia": "Revisó diseño instruccional",
+          "fila": 191,
+          "obligatorio": true,
+          "grupo": "reviso_di",
+          "ancho": 3
+        },
+        {
+          "id": "firma_reviso_di_puesto",
+          "etiqueta": "Puesto",
+          "tipo": "texto",
+          "guia": "Revisó diseño instruccional",
+          "fila": 192,
+          "obligatorio": true,
+          "grupo": "reviso_di",
+          "ancho": 3
+        },
+        {
+          "id": "firma_contenidos_nombre",
+          "etiqueta": "Nombre completo",
+          "tipo": "texto",
+          "guia": "Elaboró y revisó contenidos",
+          "fila": 193,
+          "obligatorio": true,
+          "grupo": "contenidos",
+          "ancho": 3
+        },
+        {
+          "id": "firma_contenidos_puesto",
+          "etiqueta": "Puesto",
+          "tipo": "texto",
+          "guia": "Elaboró y revisó contenidos",
+          "fila": 194,
+          "obligatorio": true,
+          "grupo": "contenidos",
+          "ancho": 3
+        },
+        {
+          "id": "firma_identidad_nombre",
+          "etiqueta": "Nombre completo",
+          "tipo": "texto",
+          "guia": "Elaboró diseño instruccional o de identidad gráfica",
+          "fila": 195,
+          "obligatorio": true,
+          "grupo": "identidad",
+          "ancho": 3
+        },
+        {
+          "id": "firma_identidad_puesto",
+          "etiqueta": "Puesto",
+          "tipo": "texto",
+          "guia": "Elaboró diseño instruccional o de identidad gráfica",
+          "fila": 196,
+          "obligatorio": true,
+          "grupo": "identidad",
+          "ancho": 3
+        },
+        {
+          "id": "firma_autorizo_di_nombre",
+          "etiqueta": "Nombre completo",
+          "tipo": "texto",
+          "guia": "Autorizó diseño instruccional o contenidos",
+          "fila": 197,
+          "obligatorio": true,
+          "grupo": "autorizo_di",
+          "ancho": 3
+        },
+        {
+          "id": "firma_autorizo_di_puesto",
+          "etiqueta": "Puesto",
+          "tipo": "texto",
+          "guia": "Autorizó diseño instruccional o contenidos",
+          "fila": 198,
+          "obligatorio": true,
+          "grupo": "autorizo_di",
+          "ancho": 3
+        },
+        {
+          "id": "firma_autorizo_contenidos_nombre",
+          "etiqueta": "Nombre completo",
+          "tipo": "texto",
+          "guia": "Autorizó diseño instruccional o contenidos",
+          "fila": 199,
+          "obligatorio": true,
+          "grupo": "autorizo_contenidos",
+          "ancho": 3
+        },
+        {
+          "id": "firma_autorizo_contenidos_puesto",
+          "etiqueta": "Puesto",
+          "tipo": "texto",
+          "guia": "Autorizó diseño instruccional o contenidos",
+          "fila": 200,
+          "obligatorio": true,
+          "grupo": "autorizo_contenidos",
+          "ancho": 3
+        }
+      ]
+    }
+  ],
+  "correcciones_prellenado": {
+    "8": {
+      "buscar": " en ciberseguridad",
+      "reemplazar": ""
+    },
+    "_nota": "El Excel oficial trae en 'Público objetivo' un texto de otro curso ('...conocimientos previos en ciberseguridad'). Se quita esa frase para que el valor inicial sirva a cualquier curso."
+  }
+}

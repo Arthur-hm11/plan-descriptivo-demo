@@ -1,0 +1,1329 @@
+{
+  "origen": "plan_original.xlsx",
+  "extraido": "2026-10-27",
+  "rubros": [
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Nombre de la actividad de formación",
+      "descripcion": "Elige un nombre claro, breve y representativo del curso",
+      "ejemplo": "Curso: Protección de datos personales en la Administración Pública Federal",
+      "recomendacion": "Evita títulos muy largos o ambiguos; usa palabras claras y específicas.",
+      "prellenado": false
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Fecha de elaboración",
+      "descripcion": "Establece la fecha en que se generó el plan descriptivo para el desarrollo del curso",
+      "ejemplo": "11 de agosto de 2026",
+      "recomendacion": "Anotar la fecha comenzando por día, mes y año",
+      "prellenado": false
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Nombre de la Institución",
+      "descripcion": "Dependencia o entidad responsable del diseño del contenido de la actividad de formación",
+      "ejemplo": "Secretaría Anticorrupción y Buen Gobierno",
+      "recomendacion": "Escribe el nombre completo de la institución y si es el caso si es privada o pública",
+      "prellenado": false
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Enfoque",
+      "descripcion": "1. General: se refiere a la capacitación que tiene como objetivo la de fortalecer los conocimientos en las funciones que desempeñan las personas servidoras públicas de manera general.\n2. Focalizado: esta capacitación está focalizada a funciones de apoyo (ejemplo: OIC, UAF, RRHH, TIC, etc.).\n3. Especializado: aquí se capacita para el cumplimiento de funciones que contribuyen a la misión de la institución de una manera directa (funciones sustantivas).",
+      "ejemplo": "1. General.- Para todos los niveles de puesto de la APF y contribuir en el fortalecimiento de habilidades blandas",
+      "recomendacion": "Identifica si la actividad va dirigida a funciones generales, sustantivas o adjetivas",
+      "prellenado": false
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Duración total estimada",
+      "descripcion": "Establecer la duración estimada de la actividad en horas",
+      "ejemplo": "Duración: 20 horas",
+      "recomendacion": "No sobreestimes la carga horaria; asegúrate de que el tiempo estimado coincida con las actividades.\nElabora una propuesta de planeación de tiempo dirigida a las personas participantes que contribuya a concluir satisfactoriamente",
+      "prellenado": false
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Calendarización",
+      "descripcion": "Propuesta de fecha para pilote del curso",
+      "ejemplo": "27 de agosto de 2026",
+      "recomendacion": "Se deberán proponer esta fecha para contar con una referencia de entrega y crear un compromiso en las diferentes áreas que participen.",
+      "prellenado": false
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Público objetivo o perfil de la persona servidora pública participante",
+      "descripcion": "Describe a quién va dirigido (puesto, nivel educativo, conocimientos previos, intereses, entre otros)",
+      "ejemplo": "Todas las personas servidoras públicas que desempeñan funciones de protección de datos personales o tienen interés en conocer o ampliar sus conocimientos sobre el tema.",
+      "recomendacion": "Se especifica el perfil de la persona participante\nDescribe con precisión las características necesarias para inscribirse en la acción de formación; evita asumir que todos tienen los mismos conocimientos.",
+      "prellenado": true
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Universo total",
+      "descripcion": "Número aproximado de personas servidoras públicas a las que irá dirigida la actividad",
+      "ejemplo": "1.6 millones de PSP aproximadamente",
+      "recomendacion": "Considerar la cantidad aproximada de las personas que cumplan con el perfil del participante o público objetivo.",
+      "prellenado": true
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Número de participantes por grupo",
+      "descripcion": "Definición de la cantidad máxima esperada de participantes por grupo",
+      "ejemplo": "Grupo de 1000 participantes",
+      "recomendacion": "Realizar la estimación de participantes considerando el enfoque del curso (general, focalizado o especializado).",
+      "prellenado": true
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Modalidad",
+      "descripcion": "En todos los casos la modalidad será virtual (autogestiva)",
+      "ejemplo": "Modalidad: Virtual (autogestiva)",
+      "recomendacion": "Asegúrate de que la modalidad esté alineada con los recursos, la estrategia didáctica y la impartición de las sesiones (webinar o MOOC).",
+      "prellenado": true
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Lugar o plataforma donde se impartirá",
+      "descripcion": "En caso de no impartirse por la plataforma de la Escuela de Buen Gobierno, favor de escribir el nombre de la plataforma donde se ofrecerá la actividad",
+      "ejemplo": "Escuela de Buen Gobierno",
+      "recomendacion": "Nombrar la plataforma que se utilizará para la actividad.",
+      "prellenado": true
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Responsable del diseño de la actividad",
+      "descripcion": "Nombre de la persona responsable del diseño instruccional de la actividad\n\nAnotar el correo institucional de la persona responsable del diseño.",
+      "ejemplo": "Mtra. Nombre Apellido Apellido\n\ncorreo@ejemplo.gob.mx",
+      "recomendacion": "Debe redactarse de manera breve, incluyendo datos de contacto",
+      "prellenado": false
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Responsable de los contenidos del curso",
+      "descripcion": "En caso de contar con persona experta o grupo de personas expertas, incluir una breve semblanza.",
+      "ejemplo": "Mtro. Nombre Apellido Apellido, Director General de Normatividad y Prevención\nLicenciado en Derecho por la Universidad Panamericana\nMaestro en Derecho de la Empresa por la Universidad Panamericana\nCon estudios de Especialización en Derecho de Propiedad industrial por la Universidad de Texas.",
+      "recomendacion": "Debe redactarse de manera breve, incluyendo datos de contacto",
+      "prellenado": false
+    },
+    {
+      "seccion": "I. Datos generales",
+      "rubro": "Recomendaciones en general para la persona participante",
+      "descripcion": "Describe cuáles son las recomendaciones que deberá considerar la persona participante durante su curso que le ayuden a concluirlo de manera satisfactoria.",
+      "ejemplo": "Programar un horario para realizar las actividades para el aprendizaje, revisar los materiales de apoyo y efectuar los ejercicios y evaluaciones en las fechas recomendadas.",
+      "recomendacion": "Estas recomendaciones deberán enfocarse en fomentar la disciplina y auto organización de la persona particpante para que logre los objetivos del curso.",
+      "prellenado": true
+    },
+    {
+      "seccion": "II. Fundamentación pedagógica",
+      "rubro": "Propósito general",
+      "descripcion": "Explica para qué sirve la acción de formación y qué aporta al desarrollo personal, laboral, profesional o académico\n\nResponde a la pregunta ¿para qué?\n\n¿para qué sirve el curso?",
+      "ejemplo": "Proteger los datos personales no significa limitar la prestación de servicios públicos en virtud del entorno tecnológico emergente, sino asegurar que esta labor se desarrolle garantizando y respetando la dignidad y la autonomía de las personas. Ante este contexto y los desafíos que conlleva, es importante que las personas servidoras públicas conozcan e identifiquen los elementos esenciales del derecho a la protección de datos personales. Por ello, este curso tiene como propósito introducir a las personas servidoras públicas en la protección y debido tratamiento de este derecho humano, así como brindar una visión actual del marco jurídico y administrativo de la protección de datos personales en México, más aún, tras la reciente transformación de la autoridad garante.",
+      "recomendacion": "Establece expectativas en la persona participante.\nDebe estar redactado en lenguaje inclusivo y motivador; conecta con el beneficio del aprendizaje.",
+      "prellenado": false
+    },
+    {
+      "seccion": "II. Fundamentación pedagógica",
+      "rubro": "Justificación",
+      "descripcion": "Argumenta la relevancia del curso: por qué se creó, qué problemática atiende o qué necesidad cubre\n\nResponde a la pregunta ¿porqué?\n\n¿porqué es importante el curso?",
+      "ejemplo": "Con motivo de la reforma constitucional en materia de simplificación orgánica publicada el 20 de diciembre de 2024 y la emisión de la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados y la Ley Federal de Protección de Datos Personales en Posesión de los Particulares publicadas el 20 de marzo de 2025, la obligación de garantizar, actualizar y fortalecer el derecho a la protección de los datos personales fue asumida por la Secretaría Anticorrupción y Buen Gobierno, a través de la nueva Unidad de Protección de Datos Personales. En este contexto, surge le necesidad de que todas las personas servidoras públicas de la Administración Pública Federal, cuya labor sea o esté relacionada con el tratamiento y protección de datos personales actualicen, adquieran y robustezcan sus conocimientos y competencias para el adecuado desarrollo de sus funciones. Asimismo, es necesario que las personas conozcan las atribuciones y funciones de la nueva Autoridad Garante y el nuevo esquema de protección de datos personales tanto en el sector público como en el sector privado, lo que contribuye a la construcción de instituciones confiables, transparentes y comprometidas con garantizar los derechos de las personas.",
+      "recomendacion": "Relaciona la justificación con necesidades reales o políticas institucionales\nJustifica la relevancia del tema principal del curso",
+      "prellenado": false
+    },
+    {
+      "seccion": "II. Fundamentación pedagógica",
+      "rubro": "Objetivo general",
+      "descripcion": "Es el enunciado que integra el propósito formativo que se desea alcanzar, en el cual se describe para quién ha sido diseñada la actividad, qué resultado de aprendizaje se espera obtener y cómo serán ejecutados los conocimientos, habilidades, desempeños u otros dominios, es decir, cómo y en que contexto o condición se demostrará el aprendizaje adquirido\n\nEn general, responde a la pregunta ¿qué será capaz de hacer la persona participante después de concluir el curso?\n\n¿Qué será capaz de hacer la persona participante después de concluir el curso?",
+      "ejemplo": "Al finalizar el curso, las personas participantes serán capaces de:\nReconocer la naturaleza, contenido y alcance del derecho a la protección de datos personales, además comprenderán los esquemas de protección del sector público y privado, los principios, deberes, derechos y obligaciones mediante el estudio de las bases teóricas y normativas de carácter introductorio para el cumplimiento de los mecanismos de protección, defensa y garantía.",
+      "recomendacion": "Están claramente definidos\nEstá claramente definido. Debe incluir un verbo medible (identificar, aplicar, analizar, etc.), orientado para obtener resultados observables en su área de trabajo.",
+      "prellenado": false
+    },
+    {
+      "seccion": "II. Fundamentación pedagógica",
+      "rubro": "Objetivos específicos",
+      "descripcion": "Resultados particulares por tema, unidad o módulo\n\nResponde a la pregunta ¿cómo?\n\nCon base en el objetivo general ¿cómo se logrará?",
+      "ejemplo": "1. Conocer la evolución histórica del marco jurídico de protección de datos personales a nivel nacional e internacional.\n\n2. Conocer los principios, deberes y derechos que rigen el tratamiento de los datos personales, así como las obligaciones que deben cumplir los responsables y/o personas encargadas de su tratamiento.",
+      "recomendacion": "Están alineados al objetivo general\nEstán alineados con los contenido.\nEvita redactarlos como actividades; deben describir resultados esperados, no tareas",
+      "prellenado": false
+    },
+    {
+      "seccion": "II. Fundamentación pedagógica",
+      "rubro": "Competencias relacionadas",
+      "descripcion": "Se refiere a: Saber ser (actitudes), saber hacer (habilidades) y saber conocer (conocimientos)",
+      "ejemplo": "Competencias: pensamiento analítico, comunicación efectiva y juicio ético.",
+      "recomendacion": "Verifica que las competencias sean coherentes con los objetivos y actividades del curso.",
+      "prellenado": false
+    },
+    {
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Estructurado por",
+      "descripcion": "Las actividades de formación pueden ser estructuradas por unidades, módulos o temas. En los casos de cursos para la plataforma de Escuela de Buen Gobierno, todas serán estructuradas por \"temas\".",
+      "ejemplo": "Temas",
+      "recomendacion": "Aborda los temas de lo general a lo particular.\nEl temario debe tener secuencia lógica; evita temas redundantes o desarticulados e ir de lo fácil a lo complejo.",
+      "prellenado": false
+    },
+    {
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Contenido temático",
+      "descripcion": "Nombre de cada uno de los temas",
+      "ejemplo": "Tema 1. Sensibilización y contexto histórico normativo nacional e internacionales del derecho a la protección de datos personales.",
+      "recomendacion": "Logra captar la atención.\nPresenta continuidad mediante la introducción y cierre en cada tema.\nEs pertinente, actualizado y confiable.\nAborda los temas de lo básico a lo especializado\nEstá organizado de forma lógica y progresiva.\nEl lenguaje es claro, accesible y adecuado al perfil establecido\nLogra brindar información introductoria al tema.\nEvita textos extensos sin apoyo visual; incluye ejemplos prácticos y recursos multimedia.\nPresenta un lenguaje uniforme.",
+      "prellenado": false
+    },
+    {
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Duración de cada tema",
+      "descripcion": "Tiempo estimado en horas de cada tema",
+      "ejemplo": "Tema 1: 3 horas",
+      "recomendacion": "Definir el tiempo promedio en que se puede concluir cada unidad, módulo o tema.",
+      "prellenado": false
+    },
+    {
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Subtemas",
+      "descripcion": "Nombre de cada uno de los subtemas y en su caso de los sub-subtemas",
+      "ejemplo": "1.1. Sensibilización del uso de los datos personales. ¿Por qué es importante proteger los datos personales?\n1.2. Contexto histórico normativo de la protección de datos personales.\n1.3. Conceptos fundamentales de las leyes general y federal",
+      "recomendacion": "El temario deberá ir de los temas mas sencillos a los más complejos y conservar lógica entre uno y otro",
+      "prellenado": false
+    },
+    {
+      "seccion": "IV. Estrategia didáctica",
+      "rubro": "Metodología de enseñanza y aprendizaje",
+      "descripcion": "Se refiere a la metodología didáctica que se utilizará para el proceso de enseñanza y aprendizaje.",
+      "ejemplo": "Tema 1. Aprendizaje por repetición",
+      "recomendacion": "Elige el método que favorecerá el logro de los objetivos de aprendizaje y el abordaje del temario mediante actividades prácticas, ejercicios de autoevaluación y reflexión.\nUtiliza instrucciones son claras y completas y describe paso a paso qué debe hacer la persona participante; usa lenguaje imperativo amable (‘realiza’, ‘reflexiona’).",
+      "prellenado": false
+    },
+    {
+      "seccion": "IV. Estrategia didáctica",
+      "rubro": "Actividades de aprendizaje",
+      "descripcion": "Son las actividades programadas para desarrollar o reforzar el aprendizaje:",
+      "ejemplo": "Tema 1:\nAnálisis de material audio visual\nTrivias interactivas (quiz)",
+      "recomendacion": "Asegúrate de que los recursos sean accesibles desde distintos dispositivos y revisa que contenga los siguientes elementos:\nNumeración completa\nGráficos que no obstaculizan la legibilidad del texto\nPresenta la información completa en cada diapositiva\nLas diapositivas están libres de saturación de texto\nLas imágenes están relacionadas con el contenido de las diapositivas\nDistingue correctamente entre cuadros, tablas y figuras y estos se encuentra completos y legibles\nPresenta uniformidad en los colores que se utilizan a lo largo de la presentación",
+      "prellenado": false
+    },
+    {
+      "seccion": "IV. Estrategia didáctica",
+      "rubro": "Recursos multimedia",
+      "descripcion": "Estas herramientas o recursos además de hacer el curso mas atractivo y divertido, servirán para lograr la estratégia didáctica.",
+      "ejemplo": "Tema 1:\nMaterial audio visual: videos\nMaterial visual: presentaciones",
+      "recomendacion": "Selecciona fuentes actuales y confiables; evita saturar con demasiadas lecturas.",
+      "prellenado": false
+    },
+    {
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "Evidencias de aprendizaje",
+      "descripcion": "Productos o tareas que demuestran lo aprendido.",
+      "ejemplo": "Respuestas escritas",
+      "recomendacion": "Diseña evidencias coherentes con los objetivos; no evalúes algo que no enseñaste.",
+      "prellenado": false
+    },
+    {
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "Instrumentos de evaluación",
+      "descripcion": "Son los instrumentos que se utilizarán para medir el conocimiento adquirido durante el curso:",
+      "ejemplo": "Cuestionario",
+      "recomendacion": "Las rúbricas deben ser claras, con criterios medibles y lenguaje comprensible.\nLa evaluación incluye los temas abordados en el curso\nInstrucciones claras en ejercicios y en las evaluaciones\nLas evaluaciones deben ser útiles para comprobar el avance.\nSe proporciona retroalimentación automática o guías de respuesta.\nLos reactivos son de fácil lectura y comprensión.\nDa ejemplos para resolver los ejercicios y las evaluaciones.",
+      "prellenado": false
+    },
+    {
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "Ponderación",
+      "descripcion": "Se refiere al porcentaje que ponderará cada tema a la calificación final",
+      "ejemplo": "Tema 5. 10%\nTema 6. 10%\nTema 7. 10%\nExamen final: 70%",
+      "recomendacion": "La suma total no podrá ser ni mayor ni menor a 100%",
+      "prellenado": false
+    },
+    {
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "Criterios específicos de acreditación",
+      "descripcion": "Porcentaje mínimo de avance o calificación aprobatoria (Revisar las disposiciones)",
+      "ejemplo": "Para acreditar se requiere realizar todas las actividades y obtener una calificación mínima de 70 sobre 100.",
+      "recomendacion": "Esta alineada con las disposiciones actuales de RRHH.",
+      "prellenado": true
+    },
+    {
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "Retroalimentación",
+      "descripcion": "Feedback automatizado o guías de autoevaluación",
+      "ejemplo": "Retroalimentación automática al finalizar cada actividad.",
+      "recomendacion": "En este rubro es importante especificar de qué manera se está retroalimentando a la persona participante, considerando que es un curso autogestivo.",
+      "prellenado": true
+    },
+    {
+      "seccion": "VI. Material de apoyo y cierre",
+      "rubro": "Referencias iniciales",
+      "descripcion": "Asegurarse que las referencias estén escritas en formato APA 7ª edición",
+      "ejemplo": "Cámara de Diputados del H. Congreso de la Unión. (2017, 5 de febrero). Constitución Política de los Estados Unidos Mexicanos. Última Reforma DOF 15-10-2025. https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf\nCámara de Diputados del H. Congreso de la Unión. (2025, 20 de marzo). Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados. https://www.diputados.gob.mx/LeyesBiblio/pdf/LGPDPPSO.pdf\nCámara de Diputados del H. Congreso de la Unión. (2025, 20 de marzo). Ley Federal de Protección de datos personales en posesión de los particulares. https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf",
+      "recomendacion": "Considera que los elementos esenciales para construir la cita ya sea textual o directa son: Autor, año de publicación, título de la obra y fuente. Para mayor referencia consulta: https://normas-apa.org/wp-content/uploads/Guia-Normas-APA-7ma-edicion.pdf",
+      "prellenado": false
+    },
+    {
+      "seccion": "VI. Material de apoyo y cierre",
+      "rubro": "Encuesta de satisfacción",
+      "descripcion": "Será utilizada para mejorar versiones futuras del curso",
+      "ejemplo": "Encuesta final sobre satisfacción del curso y sugerencias de mejora.",
+      "recomendacion": "Analiza los resultados de la encuesta para mejorar el diseño instruccional.",
+      "prellenado": true
+    },
+    {
+      "seccion": "VII. Autorización",
+      "rubro": "Elaboró diseño instruccional o de identidad gráfica",
+      "descripcion": "Nombre, puesto y firma de la persona encargada de la elaboración del diseño instruccional del curso",
+      "ejemplo": "Eduardo Valverde Palancares\nSubdirector de Formación y Capacitación Institucional B\n(firma)",
+      "recomendacion": "Nombre completo de la persona y del puesto",
+      "prellenado": false
+    },
+    {
+      "seccion": "VII. Autorización",
+      "rubro": "Revisó diseño instruccional",
+      "descripcion": "Nombre, puesto y firma de la persona que revisó el diseño instruccional",
+      "ejemplo": "Rocío Juárez Méndez\nSubdirectora de Innovación para el Aprendizaje A\n(firma)",
+      "recomendacion": "Nombre completo de la persona y del puesto",
+      "prellenado": false
+    },
+    {
+      "seccion": "VII. Autorización",
+      "rubro": "Elaboró y revisó contenidos",
+      "descripcion": "Nombre, puesto y firma de la persona encargada de revisar el contenido teorico y normativo del curso",
+      "ejemplo": "Aldo Fragoso Pastrana\nDirector General de Normatividad y Prevención\n(firma)",
+      "recomendacion": "Nombre completo de la persona y del puesto",
+      "prellenado": false
+    },
+    {
+      "seccion": "VII. Autorización",
+      "rubro": "Autorizó diseño instruccional o contenidos",
+      "descripcion": "Nombre, puesto y firma de la persona que autorizó el plan descriptivo del curso",
+      "ejemplo": "Zazil A. Torres González\nDirectora de Capacitación Específica y Vinculación Estratégica\n(firma)",
+      "recomendacion": "Nombre completo de la persona y del puesto",
+      "prellenado": false
+    }
+  ],
+  "listas": {
+    "enfoque": [
+      "1. General (todas las funciones)",
+      "2. Focalizado (funciones adjetivas)",
+      "3. Especializado (funciones sustantivas)"
+    ],
+    "estructura": [
+      "Unidades",
+      "Módulos",
+      "Temas"
+    ],
+    "metodologias": [
+      "Aprendizaje autodirigido",
+      "Aprendizaje basado en problemas",
+      "Aprendizaje basado en proyectos",
+      "Aprendizaje colaborativo",
+      "Aprendizaje por repetición",
+      "Aula invertida",
+      "Clases o lecciones magistrales",
+      "Estudio de casos",
+      "Gamificación educativa",
+      "Resolución de ejercicios",
+      "Trabajo individual",
+      "Tutorías"
+    ],
+    "actividades": [
+      "Análisis de casos",
+      "Análisis de material audio visual",
+      "Autoevaluación",
+      "Cápsulas interactivas",
+      "Cuestionarios con retroalimentación inmediata",
+      "Diario de aprendizaje",
+      "Ejercicios prácticos",
+      "Estudio de casos",
+      "Foros de discusión",
+      "Foros reflexivos",
+      "Juegos educativos",
+      "Lectura guiada",
+      "Portafolios digitales",
+      "Proyecto de investigación grupal",
+      "Proyecto de investigación individual",
+      "Reflexión individual",
+      "Trivias interactivas (quiz)"
+    ],
+    "recursos": [
+      "Herramientas interactivas: simuladores",
+      "Herramientas interactivas: software",
+      "Material audio visual: cortometrajes",
+      "Material audio visual: entrevistas o testimonios",
+      "Material audio visual: fragmentos de películas",
+      "Material audio visual: podcasts",
+      "Material audio visual: reels",
+      "Material audio visual: videos",
+      "Material auditivo: audio de textos",
+      "Material auditivo: audios con ideas claves del curso",
+      "Material auditivo: cápsulas breves con resúmenes o ejemplos",
+      "Material visual: recuadros",
+      "Material visual: cuadros sinópticos",
+      "Material visual: diagramas",
+      "Material visual: diagramas de flujo",
+      "Material visual: gráficas",
+      "Material visual: imágenes",
+      "Material visual: infografías",
+      "Material visual: mapas mentales o conceptuales",
+      "Material visual: presentaciones",
+      "Recursos textuales: casos de estudio",
+      "Recursos textuales: fichas de lectura",
+      "Recursos textuales: lecturas comentadas",
+      "Recursos textuales: manuales",
+      "Recursos textuales: artículos",
+      "Recursos textuales: glosarios",
+      "Recursos textuales: guías",
+      "Recursos textuales: libros",
+      "Recursos textuales: notas enciclopédicas",
+      "Recursos textuales: recortes de información"
+    ],
+    "evidencias": [
+      "Respuestas escritas",
+      "Proyectos, maquetas y prototipos",
+      "Presentaciones digitales",
+      "Informes, ensayos y reseñas",
+      "Mapas conceptuales"
+    ],
+    "instrumentos": [
+      "Casos prácticos",
+      "Cuestionario",
+      "Escalas de valoración",
+      "Guía de observación",
+      "Lista de cotejo",
+      "Mapas conceptuales",
+      "Portafolio de evidencias",
+      "Proyecto",
+      "Rúbrica"
+    ]
+  },
+  "anexo": {
+    "Metodología de enseñanza y aprendizaje": [
+      {
+        "opcion": "Aprendizaje autodirigido",
+        "definicion": "La persona aprendiz asume la responsabilidad de su avance educativo, decide ritmo, recursos y evaluación",
+        "ejemplo": "Una persona servidora pública organiza un plan semanal para aprender Excel y aplica lo aprendido en reportes reales"
+      },
+      {
+        "opcion": "Aprendizaje basado en problemas",
+        "definicion": "Partiendo de un problema real o simulado; que requiere investigación, análisis y propuesta de soluciones de parte de los participantes",
+        "ejemplo": "Se plantea un caso, por ejemplo; la construcción de un hospital regional con un presupuesto de 500 millones de pesos. Durante la ejecución, se detectan irregularidades como sobrecostos en materiales, retrasos injustificados y contratos otorgados a empresas vinculadas con funcionarios. Las personas participantes deben analizar el caso, identificar riesgos de corrupción y proponer soluciones institucionales."
+      },
+      {
+        "opcion": "Aprendizaje basado en proyectos",
+        "definicion": "La persona participante desarrolla un proyecto completo aplicando conocimientos en un producto concreto",
+        "ejemplo": "Un grupo diseña un programa de social, aplicando conocimientos en políticas públicas, organización y resolución de problemas"
+      },
+      {
+        "opcion": "Aprendizaje colaborativo",
+        "definicion": "Estrategia en la que las personas aprendices trabajan en equipo, comparten ideas y son responsables del aprendizaje grupal",
+        "ejemplo": "En equipo se construye un glosario digital colaborativo sobre conceptos de ética pública"
+      },
+      {
+        "opcion": "Aprendizaje por repetición",
+        "definicion": "Se memoriza información mediante repetición constante, sin profundizar en los significados",
+        "ejemplo": "Memorizar los principios de planeación estratégica repitiéndolos varias veces hasta recordarlos de memoria"
+      },
+      {
+        "opcion": "Aula invertida",
+        "definicion": "La teoría se estudia en casa y el tiempo en clase se dedica a práctica, discusión y aplicación",
+        "ejemplo": "Las personas participantes ven un video sobre principios de transparencia y rendición de cuentas en obras públicas, además realizan un lectura guiada del marco normativo básico (Ley de Obras Públicas y su Reglamento). Lo anterior les permitirá responder tres preguntas reflexivas para finalmente revisar un caso práctico de la construcción de un puente en una comunidad rural, incluyendo datos sobre presupuesto, cronograma y personas involucrados."
+      },
+      {
+        "opcion": "Clases o lecciones magistrales",
+        "definicion": "Método expositivo tradicional donde el facilitador o expositor transmite conocimientos y las personas participantes escuchan y toman notas",
+        "ejemplo": "La persona facilitadora explica los antecedentes de los derechos humanos mientras los aprendices registran fechas y personajes clave"
+      },
+      {
+        "opcion": "Estudio de casos",
+        "definicion": "Se analiza una situación concreta (real o simulada) para identificar problemas y proponer soluciones.",
+        "ejemplo": "Caso sobre conflicto vecinal en el uso de un parque público; los estudiantes diseñan alternativas de solución."
+      },
+      {
+        "opcion": "Gamificación educativa",
+        "definicion": "Uso de dinámicas de juego (puntos, retos, recompensas) para motivar y aumentar la participación.",
+        "ejemplo": "Curso de matemáticas con tabla de posiciones según número de ejercicios resueltos correctamente."
+      },
+      {
+        "opcion": "Resolución de ejercicios",
+        "definicion": "El estudiante practica con problemas o actividades para comprobar comprensión y reforzar conocimientos",
+        "ejemplo": "Resolución de ejercicios mediante una aplicación en línea con retroalimentación inmediata sobre aciertos y errores"
+      },
+      {
+        "opcion": "Trabajo individual",
+        "definicion": "Actividades realizadas de forma autónoma, favoreciendo responsabilidad y autogestión",
+        "ejemplo": "Reflexión escrita sobre hábitos de seguridad digital aplicada a escenarios cotidianos"
+      },
+      {
+        "opcion": "Tutorías",
+        "definicion": "Acompañamiento personalizado para orientar, resolver dudas y apoyar para mejorar el desempeño",
+        "ejemplo": "El tutor revisa avances en la plataforma y sugiere estrategias de estudio para completar los temas pendientes"
+      }
+    ],
+    "Actividades asincrónicas:": [
+      {
+        "opcion": "Análisis de casos",
+        "definicion": "Estudio autónomo de una situación concreta para aplicar conceptos y proponer soluciones.",
+        "ejemplo": "Se analiza un caso en donde una institución pública tiene problemas de confianza ciudadana, el reto para las personas participantes es diseñar propuestas de mejora"
+      },
+      {
+        "opcion": "Análisis de material audio visual",
+        "definicion": "Observación y examen de contenidos multimedia para identificar ideas clave y relacionarla con otros recursos educativos, tales como; presentaciones o lecturas",
+        "ejemplo": "Se presenta un video sobre comunicación asertiva y posteriormente se realizan preguntas de reflexión"
+      },
+      {
+        "opcion": "Autoevaluación",
+        "definicion": "La persona aprendiz valora su propio desempeño, identificando fortalezas y áreas de mejora.",
+        "ejemplo": "Se solicita completar una rúbrica personal sobre participación y comprensión del curso."
+      },
+      {
+        "opcion": "Cápsulas interactivas",
+        "definicion": "Son contenidos breves y dinámicos diseñados para transmitir conocimientos de manera resumida, combinando elementos multimedia (texto, audio, video, animaciones, cuestionarios) permitiendo interactuar y participar activamente en su aprendizaje",
+        "ejemplo": "Cápsula de 5 minutos sobre atención ciudadana con preguntas incrustadas"
+      },
+      {
+        "opcion": "Cuestionarios con retroalimentación inmediata",
+        "definicion": "Preguntas que ofrecen correcciones y explicaciones al instante",
+        "ejemplo": "Quiz sobre normativas de seguridad con explicación automática de cada respuesta"
+      },
+      {
+        "opcion": "Diario de aprendizaje",
+        "definicion": "Registro reflexivo de avances, dificultades y logros durante el proceso",
+        "ejemplo": "Anotar semanalmente aprendizajes y retos en un curso de liderazgo"
+      },
+      {
+        "opcion": "Ejercicios prácticos",
+        "definicion": "Actividades que aplican conocimientos en situaciones reales o simuladas",
+        "ejemplo": "Simulación de negociación en un conflicto laboral"
+      },
+      {
+        "opcion": "Foros de discusión",
+        "definicion": "Espacios virtuales o presenciales para debatir y compartir opiniones sobre un tema",
+        "ejemplo": "Foro sobre impacto de la transformación digital en instituciones públicas"
+      },
+      {
+        "opcion": "Foros reflexivos",
+        "definicion": "Espacios para compartir experiencias y fomentar introspección crítica",
+        "ejemplo": "Reflexión sobre hábitos de manejo del tiempo y productividad"
+      },
+      {
+        "opcion": "Juegos educativos",
+        "definicion": "Actividades diseñadas para aprender mediante la diversión y la interacción, combinando objetivos pedagógicos con mecánicas de juego",
+        "ejemplo": "Participar en un juego de tablero digital donde se deben responder preguntas para avanzar y completar retos relacionados con el tema del curso."
+      },
+      {
+        "opcion": "Lectura guiada",
+        "definicion": "Lectura acompañada de preguntas o pautas que orientan la comprensión",
+        "ejemplo": "Lectura sobre liderazgo con preguntas orientadoras sobre conceptos clave"
+      },
+      {
+        "opcion": "Portafolios digitales",
+        "definicion": "Actividad de aprendizaje en la que la persona participante recopila, organiza y presenta de manera digital sus trabajos, evidencias y reflexiones sobre su proceso de aprendizaje",
+        "ejemplo": "Portafolio en Google Sites con evidencias de proyectos y reflexiones finales"
+      },
+      {
+        "opcion": "Proyecto de investigación grupal",
+        "definicion": "Estrategia de aprendizaje en la que en equipo se trabaja de manera colaborativa para investigar un tema específico, recopilar información, analizar datos y presentar conclusiones",
+        "ejemplo": "Investigación sobre impacto ambiental de residuos electrónicos con propuesta de solución"
+      },
+      {
+        "opcion": "Proyecto de investigación individual",
+        "definicion": "Estrategia de aprendizaje donde la persona participante investiga de manera autónoma un tema específico, recopilando información, analizando datos y elaborando conclusiones por sí mismo",
+        "ejemplo": "Investigación sobre hábitos de consumo digital en una dependencia"
+      },
+      {
+        "opcion": "Reflexión individual",
+        "definicion": "Es una estrategia de aprendizaje en donde la persona participante analiza y evalúa sus propios conocimientos, experiencias y actitudes frente a un tema o actividad específica",
+        "ejemplo": "Se solicita a la persona participante que escriba un texto sobre cómo cambió su percepción del trabajo colaborativo después de realizar una actividad grupal"
+      },
+      {
+        "opcion": "Trivias interactivas (quiz)",
+        "definicion": "Son ejercicios breves de preguntas y respuestas que permiten a la persona participante evaluar su comprensión de un tema de forma inmediata",
+        "ejemplo": "Trivia rápida de 10 preguntas sobre transparencia"
+      }
+    ],
+    "Recursos complementarios": [
+      {
+        "opcion": "Herramientas interactivas: simuladores",
+        "definicion": "Programas que permiten practicar situaciones reales de manera virtual",
+        "ejemplo": "Simulador de toma de decisiones en gestión de proyectos públicos"
+      },
+      {
+        "opcion": "Herramientas interactivas: software",
+        "definicion": "Aplicaciones que facilitan actividades prácticas o ejercicios interactivos",
+        "ejemplo": "Software para diseñar indicadores de desempeño institucional"
+      },
+      {
+        "opcion": "Material audio visual: cortometrajes",
+        "definicion": "Videos breves los cuales pueden ser animados que narran historias o explican procesos",
+        "ejemplo": "Cortometraje sobre la importancia de la transparencia en la administración pública"
+      },
+      {
+        "opcion": "Material audio visual: entrevistas o testimonios",
+        "definicion": "Videos con experiencias o reflexiones de personas reales",
+        "ejemplo": "Testimonio de un ciudadano sobre un programa social"
+      },
+      {
+        "opcion": "Material audio visual: fragmentos de películas",
+        "definicion": "Escenas seleccionadas que ilustran conceptos, comportamientos o valores",
+        "ejemplo": "Fragmento de película que muestra dilemas éticos en la gestión pública"
+      },
+      {
+        "opcion": "Material audio visual: podcasts",
+        "definicion": "Grabaciones de audio que desarrollan un tema de forma conversacional",
+        "ejemplo": "Charla entre especialistas sobre innovación en políticas públicas"
+      },
+      {
+        "opcion": "Material audio visual: reels",
+        "definicion": "Videos cortos y dinámicos que sintetizan ideas clave",
+        "ejemplo": "Reel con consejos rápidos sobre liderazgo en equipos gubernamentales"
+      },
+      {
+        "opcion": "Material audio visual: videos",
+        "definicion": "Producciones audiovisuales mismas que pueden ser animadas explicando conceptos o procesos",
+        "ejemplo": "Video explicativo en el que exponen las diferencias entre administración y gestión pública"
+      },
+      {
+        "opcion": "Material auditivo: audio de textos",
+        "definicion": "Lecturas grabadas que permiten aprender escuchando",
+        "ejemplo": "Audio de un capítulo sobre ética e integridad en el servicio público"
+      },
+      {
+        "opcion": "Material auditivo: audios con ideas claves del curso",
+        "definicion": "Grabaciones breves que resumen puntos esenciales.",
+        "ejemplo": "Audio con los cinco principios básicos de la planeación estratégica."
+      },
+      {
+        "opcion": "Material auditivo: cápsulas breves con resúmenes o ejemplos",
+        "definicion": "Clips cortos que sintetizan información o muestran casos prácticos.",
+        "ejemplo": "Cápsula con ejemplos de buenas prácticas en atención ciudadana."
+      },
+      {
+        "opcion": "Material visual: recuadros",
+        "definicion": "Elementos gráficos que destacan información puntual",
+        "ejemplo": "Recuadro con definiciones clave sobre gobernanza"
+      },
+      {
+        "opcion": "Material visual: cuadros sinópticos",
+        "definicion": "Esquemas que organizan jerárquicamente la información",
+        "ejemplo": "Cuadro sinóptico sobre los ejes generales y transversales del Plan Nacional de Desarrollo"
+      },
+      {
+        "opcion": "Material visual: diagramas",
+        "definicion": "Representaciones gráficas de procesos o estructuras",
+        "ejemplo": "Diagrama sobre la estructura de un programa de capacitación"
+      },
+      {
+        "opcion": "Material visual: diagramas de flujo",
+        "definicion": "Gráficos que muestran pasos secuenciales de un proceso",
+        "ejemplo": "Diagrama de flujo del procedimiento de rendición de cuentas"
+      },
+      {
+        "opcion": "Material visual: gráficas",
+        "definicion": "Representaciones visuales de datos o relaciones que facilitan la comprensión rápida de información",
+        "ejemplo": "Gráfica de barras"
+      },
+      {
+        "opcion": "Material visual: imágenes",
+        "definicion": "Fotografías o ilustraciones que apoyan la explicación de conceptos y generan impacto visual",
+        "ejemplo": "Imagen de una persona servidora pública atendiendo a la ciudadanía en una lengua originaria para ejemplificar trato digno"
+      },
+      {
+        "opcion": "Material visual: infografías",
+        "definicion": "Combinación de texto e imágenes que sintetizan información compleja en un formato atractivo y claro",
+        "ejemplo": "Infografía sobre los pasos del proceso de evaluación de programas públicos"
+      },
+      {
+        "opcion": "Material visual: mapas mentales o conceptuales",
+        "definicion": "Diagramas que organizan ideas y muestran relaciones entre conceptos.",
+        "ejemplo": "Mapa conceptual sobre los principios de la ética pública"
+      },
+      {
+        "opcion": "Material visual: presentaciones",
+        "definicion": "Conjunto de diapositivas que integran texto, imágenes y esquemas para guiar la exposición de un tema",
+        "ejemplo": "Presentación en PowerPoint que desarrolla de forma sintética, atractiva y secuencial los temas que integran el curso"
+      },
+      {
+        "opcion": "Recursos textuales: casos de estudio",
+        "definicion": "Documentos que narran situaciones reales o simuladas para analizar y aplicar conocimientos",
+        "ejemplo": "Caso de estudio sobre la implementación de un programa social en una comunidad rural, del cual se desprenden preguntas o elementos de análisis"
+      },
+      {
+        "opcion": "Recursos textuales: fichas de lectura",
+        "definicion": "Resúmenes breves que destacan ideas clave de un texto para facilitar su estudio",
+        "ejemplo": "Ficha de lectura de un artículo sobre transparencia gubernamental"
+      },
+      {
+        "opcion": "Recursos textuales: lecturas comentadas",
+        "definicion": "Textos acompañados de notas o reflexiones que orientan la comprensión crítica.",
+        "ejemplo": "Lectura comentada de un capítulo sobre participación ciudadana con observaciones del facilitador."
+      },
+      {
+        "opcion": "Recursos textuales: manuales",
+        "definicion": "Documentos prácticos que explican procedimientos paso a paso",
+        "ejemplo": "Manual de uso del sistema electrónico de trámites gubernamentales"
+      },
+      {
+        "opcion": "Recursos textuales: artículos",
+        "definicion": "Textos breves que presentan información o análisis sobre un tema específico",
+        "ejemplo": "Artículo académico sobre innovación en políticas públicas"
+      },
+      {
+        "opcion": "Recursos textuales: glosarios",
+        "definicion": "Listados de términos y definiciones que aclaran el lenguaje técnico",
+        "ejemplo": "Glosario de conceptos clave derechos humanos"
+      },
+      {
+        "opcion": "Recursos textuales: guías",
+        "definicion": "Documentos que orientan al estudiante en la realización de actividades o procesos",
+        "ejemplo": "Guía práctica para elaborar indicadores de desempeño institucional"
+      },
+      {
+        "opcion": "Recursos textuales: libros",
+        "definicion": "Obras extensas que desarrollan un tema en profundidad",
+        "ejemplo": "Libro sobre gestión pública contemporánea"
+      },
+      {
+        "opcion": "Recursos textuales: notas enciclopédicas",
+        "definicion": "Textos breves y objetivos que presentan información general sobre un tema.",
+        "ejemplo": "Nota enciclopédica sobre el concepto de gobernanza."
+      },
+      {
+        "opcion": "Recursos textuales: recortes de información",
+        "definicion": "Fragmentos de textos o noticias que ilustran un tema puntual",
+        "ejemplo": "Recorte de periódico sobre un caso reciente de corrupción"
+      }
+    ],
+    "Evidencias de aprendizaje": [
+      {
+        "opcion": "Respuestas escritas",
+        "definicion": "Explicaciones o argumentos redactados por la persona que participa en el proceso formativo para demostrar la comprensión de un tema",
+        "ejemplo": "Respuesta escrita sobre la importancia de la Ley General de Acceso de las Mujeres a una Vida Libre de Violencia"
+      },
+      {
+        "opcion": "Proyectos, maquetas y prototipos",
+        "definicion": "Productos concretos que muestran la aplicación práctica de conceptos aprendidos",
+        "ejemplo": "Prototipo de un sistema digital para mejorar la atención ciudadana"
+      },
+      {
+        "opcion": "Presentaciones digitales",
+        "definicion": "Exposiciones estructuradas que comunican ideas o resultados mediante herramientas digitales",
+        "ejemplo": "Presentación en diapositivas sobre indicadores de desempeño institucional"
+      },
+      {
+        "opcion": "Informes, ensayos y reseñas",
+        "definicion": "Textos que organizan, analizan y expresan información sobre un tema específico",
+        "ejemplo": "Ensayo sobre la participación ciudadana en la planeación de políticas públicas"
+      },
+      {
+        "opcion": "Mapas conceptuales",
+        "definicion": "Diagramas que muestran relaciones entre conceptos de manera visual y organizada",
+        "ejemplo": "Mapa conceptual sobre las diferentes Faltas Administrativas Graves"
+      }
+    ],
+    "Instrumentos de evaluación": [
+      {
+        "opcion": "Casos prácticos",
+        "definicion": "Situaciones reales o simuladas que permiten aplicar conocimientos y habilidades en un contexto específico",
+        "ejemplo": "Análisis de un caso práctico emblemático sobre el desvío de recursos"
+      },
+      {
+        "opcion": "Cuestionario",
+        "definicion": "Conjunto de preguntas breves que miden comprensión de conceptos y contenidos, con retroalimentación inmediata",
+        "ejemplo": "Cuestionario en línea sobre principios de fiscalización"
+      },
+      {
+        "opcion": "Escalas de valoración",
+        "definicion": "Instrumentos que asignan un nivel o puntaje al desempeño ejecutado, de forma cuantitativa o cualitativa",
+        "ejemplo": "Escala de 1 a 5 para evaluar la claridad en una presentación digital"
+      },
+      {
+        "opcion": "Guía de observación",
+        "definicion": "Formato para registrar conductas, habilidades y aplicación de conocimientos durante una actividad",
+        "ejemplo": "Guía de observación para evaluar los pasos realizados al utilizar un programa para el registro de indicadores"
+      },
+      {
+        "opcion": "Lista de cotejo",
+        "definicion": "Verifica la presencia o ausencia de criterios específicos en un trabajo o desempeño",
+        "ejemplo": "Lista de cotejo para revisar si un informe incluye introducción, desarrollo y conclusiones"
+      },
+      {
+        "opcion": "Mapas conceptuales",
+        "definicion": "Diagramas usados como instrumento para medir comprensión y organización de conceptos",
+        "ejemplo": "Mapa conceptual sobre los tipos de evaluación institucional"
+      },
+      {
+        "opcion": "Portafolio de evidencias",
+        "definicion": "Compilación de trabajos y materiales que muestran el progreso y aplicación de conocimientos",
+        "ejemplo": "Portafolio con fichas de lectura, reflexiones y proyectos aplicados"
+      },
+      {
+        "opcion": "Proyecto",
+        "definicion": "Actividad aplicada que integra conocimientos y habilidades en una propuesta concreta",
+        "ejemplo": "Proyecto de mejora en un procedimiento administrativo de su institución"
+      },
+      {
+        "opcion": "Rúbrica",
+        "definicion": "Matriz que describe criterios y niveles de desempeño, facilitando una evaluación clara y justa",
+        "ejemplo": "Rúbrica para evaluar un ensayo sobre participación ciudadana, considerando claridad, profundidad y pertinencia"
+      },
+      {
+        "opcion": "Examen objetivo",
+        "definicion": "Prueba estructurada con preguntas cerradas (opción múltiple) que mide conocimientos específicos",
+        "ejemplo": "Examen final que mide el progreso de aprendizaje en un curso de planeación estratégica"
+      }
+    ]
+  },
+  "matriz": [
+    {
+      "fila": 2,
+      "seccion": "I. Datos generales",
+      "rubro": "Nombre de la actividad de formación (curso, diplomado, taller)",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 3,
+      "seccion": "I. Datos generales",
+      "rubro": "Nombre de la Institución",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 4,
+      "seccion": "I. Datos generales",
+      "rubro": "Enfoque",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 5,
+      "seccion": "I. Datos generales",
+      "rubro": "Duración total estimada (en horas)",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 6,
+      "seccion": "I. Datos generales",
+      "rubro": "Fecha de elaboración",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 7,
+      "seccion": "I. Datos generales",
+      "rubro": "Fecha propuesta de pilotaje",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 8,
+      "seccion": "I. Datos generales",
+      "rubro": "Público objetivo o perfil del participante",
+      "prellenado": true,
+      "valor": "Personas servidoras públicas del Gobierno de México, pertenecientes a cualquier profesión, disciplina o área funcional, sin necesidad de contar con conocimientos previos en ciberseguridad."
+    },
+    {
+      "fila": 9,
+      "seccion": "I. Datos generales",
+      "rubro": "Número de participantes por grupo",
+      "prellenado": true,
+      "valor": "1000"
+    },
+    {
+      "fila": 10,
+      "seccion": "I. Datos generales",
+      "rubro": "Universo total",
+      "prellenado": true,
+      "valor": "1.2 millones"
+    },
+    {
+      "fila": 11,
+      "seccion": "I. Datos generales",
+      "rubro": "Modalidad",
+      "prellenado": true,
+      "valor": "Virtual (autogestiva)"
+    },
+    {
+      "fila": 12,
+      "seccion": "I. Datos generales",
+      "rubro": "Plataforma donde se impartirá",
+      "prellenado": true,
+      "valor": "Escuela de Buen Gobierno"
+    },
+    {
+      "fila": 13,
+      "seccion": "I. Datos generales",
+      "rubro": "Responsable del diseño instruccional",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 14,
+      "seccion": "I. Datos generales",
+      "rubro": "Correo de la persona responsable del diseño de la actividad",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 15,
+      "seccion": "I. Datos generales",
+      "rubro": "Responsable de los contenidos del curso",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 16,
+      "seccion": "I. Datos generales",
+      "rubro": "Recomendaciones en general para la persona participante",
+      "prellenado": true,
+      "valor": "Programar un horario para realizar las actividades para el aprendizaje, revisar los materiales de apoyo y efectuar los ejercicios y evaluaciones en las fechas recomendadas."
+    },
+    {
+      "fila": 17,
+      "seccion": "II. Fundamentación pedagógica",
+      "rubro": "Propósito general",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 18,
+      "seccion": "II. Fundamentación pedagógica",
+      "rubro": "Justificación",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 19,
+      "seccion": "II. Fundamentación pedagógica",
+      "rubro": "Objetivo general",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 20,
+      "seccion": "II. Fundamentación pedagógica",
+      "rubro": "Objetivos específicos",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 28,
+      "seccion": "II. Fundamentación pedagógica",
+      "rubro": "Competencias relacionadas",
+      "prellenado": true,
+      "valor": ""
+    },
+    {
+      "fila": 29,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Estructura del Programa:",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 30,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre del tema 1",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 31,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Tema 1. Tiempo estimado en horas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 32,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre de los Subtemas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 47,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre del tema 2",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 48,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Tema 2. Tiempo estimado en horas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 49,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre de los Subtemas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 64,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre del tema 3",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 65,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Tema 3. Tiempo estimado en horas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 66,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre de los Subtemas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 81,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre del tema 4",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 82,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Tema 4. Tiempo estimado en horas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 83,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre de los Subtemas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 98,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre del tema 5",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 99,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Tema 5. Tiempo estimado en horas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 100,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre de los Subtemas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 115,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre del tema 6",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 116,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Tema 6. Tiempo estimado en horas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 117,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre de los Subtemas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 132,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre del tema 7",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 133,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Tema 7. Tiempo estimado en horas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 134,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre de los Subtemas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 149,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre del tema 8",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 150,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Tema 8. Tiempo estimado en horas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 151,
+      "seccion": "III. Estructura académica del contenido",
+      "rubro": "Nombre de los Subtemas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 166,
+      "seccion": "IV. Estrategia didáctica",
+      "rubro": "Temas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 167,
+      "seccion": "IV. Estrategia didáctica",
+      "rubro": "Tema 1\n0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 168,
+      "seccion": "IV. Estrategia didáctica",
+      "rubro": "Tema 2\n0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 169,
+      "seccion": "IV. Estrategia didáctica",
+      "rubro": "Tema 3\n0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 170,
+      "seccion": "IV. Estrategia didáctica",
+      "rubro": "Tema 4\n0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 171,
+      "seccion": "IV. Estrategia didáctica",
+      "rubro": "Tema 5\n0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 172,
+      "seccion": "IV. Estrategia didáctica",
+      "rubro": "Tema 6\n0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 173,
+      "seccion": "IV. Estrategia didáctica",
+      "rubro": "Tema 7\n0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 174,
+      "seccion": "IV. Estrategia didáctica",
+      "rubro": "Tema 8\n0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 175,
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "Temas",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 176,
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 177,
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 178,
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 179,
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 180,
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 181,
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 182,
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 183,
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "0",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 185,
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "Criterios específicos de acreditación",
+      "prellenado": true,
+      "valor": "Para acreditar se requiere realizar todas las actividades y obtener una calificación mínima de 70 sobre 100."
+    },
+    {
+      "fila": 186,
+      "seccion": "V. Evaluación del aprendizaje",
+      "rubro": "Retroalimentación",
+      "prellenado": true,
+      "valor": "Retroalimentación automática al finalizar cada actividad."
+    },
+    {
+      "fila": 187,
+      "seccion": "VI. Material de apoyo y cierre",
+      "rubro": "Referencias iniciales",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 188,
+      "seccion": "VI. Material de apoyo y cierre",
+      "rubro": "Encuesta de satisfacción",
+      "prellenado": true,
+      "valor": "Encuesta final sobre satisfacción del curso y sugerencias de mejora"
+    },
+    {
+      "fila": 189,
+      "seccion": "VII. Autorización",
+      "rubro": "Elaboró diseño instruccional",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 190,
+      "seccion": "VII. Autorización",
+      "rubro": "Puesto",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 191,
+      "seccion": "VII. Autorización",
+      "rubro": "Revisó diseño instruccional",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 192,
+      "seccion": "VII. Autorización",
+      "rubro": "Puesto",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 193,
+      "seccion": "VII. Autorización",
+      "rubro": "Elaboró y revisó contenidos",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 194,
+      "seccion": "VII. Autorización",
+      "rubro": "Puesto",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 195,
+      "seccion": "VII. Autorización",
+      "rubro": "Elaboró diseño de identidad gráfica",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 196,
+      "seccion": "VII. Autorización",
+      "rubro": "Puesto",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 197,
+      "seccion": "VII. Autorización",
+      "rubro": "Autorizó diseño instruccional",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 198,
+      "seccion": "VII. Autorización",
+      "rubro": "Puesto",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 199,
+      "seccion": "VII. Autorización",
+      "rubro": "Autorizó contenidos",
+      "prellenado": false,
+      "valor": ""
+    },
+    {
+      "fila": 200,
+      "seccion": "VII. Autorización",
+      "rubro": "Puesto",
+      "prellenado": false,
+      "valor": ""
+    }
+  ]
+}

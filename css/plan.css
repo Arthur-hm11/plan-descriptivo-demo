@@ -1,0 +1,78 @@
+/* Hoja final del Plan descriptivo: copia de la hoja "Plan descriptivo" del Excel oficial.
+   Franjas de sección #1E5B4F con letra blanca, líneas finas, 10 columnas (A–J). Tamaño carta vertical al imprimir. */
+@font-face { font-family: "Noto Sans"; src: url("../snd/fuentes/NotoSans.ttf") format("truetype"); font-weight: 100 900; font-stretch: 62.5% 100%; font-display: swap; }
+
+:root {
+  --franja: #1E5B4F;       /* color de las franjas del Excel oficial */
+  --dorado: #A6802D;       /* título del encabezado del Excel */
+  --guinda: #611232;
+  --linea: #8F8F8F;
+  --vacio: #FBF3DF;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #E9E9E9; color: #161A1D; font-family: Calibri, Carlito, "Noto Sans", system-ui, sans-serif; font-size: 14px; line-height: 1.35; }
+
+/* ---------- barra de pantalla ---------- */
+.herramientas { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; padding: 12px 16px; background: #fff; border-bottom: 1px solid #D4D4D4; }
+.herramientas__volver { color: var(--guinda); font-weight: 600; text-decoration: none; }
+.herramientas__volver:hover { text-decoration: underline; }
+.herramientas__aviso { flex: 1; margin: 0; font-size: 14px; }
+.herramientas__aviso--alerta { color: #5C4310; }
+.herramientas__aviso--ok { color: var(--franja); }
+.herramientas__imprimir { font: inherit; font-weight: 600; color: #fff; background: var(--guinda); border: 2px solid var(--guinda); border-radius: 6px; padding: 10px 20px; cursor: pointer; }
+.herramientas__imprimir:hover { background: #4A0C26; }
+.herramientas__imprimir:focus-visible, .herramientas__volver:focus-visible { outline: 3px solid #CE92A6; outline-offset: 2px; }
+
+/* ---------- la hoja (en pantalla parece una hoja carta) ---------- */
+.hoja { width: min(216mm, 100% - 32px); margin: 24px auto; background: #fff; padding: 14mm 12mm; box-shadow: 0 2px 12px rgba(0, 0, 0, .15); }
+.hoja__encabezado { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 12px; margin-bottom: 10px; }
+.hoja__logo { height: 42px; width: auto; max-width: 100%; object-fit: contain; }
+.hoja__logo--escuela { height: 64px; justify-self: end; }
+.hoja__titulo { margin: 0; font-family: Bahnschrift, "Noto Sans", sans-serif; font-weight: 700; font-size: 21px; color: var(--dorado); text-align: center; }
+
+.plan, .firmas { font-stretch: 87.5%; }   /* Noto Sans angosta, parecida a la Calibri del Excel: las etiquetas caben en columnas angostas */
+.plan { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.plan td { border: 1px solid var(--linea); border-width: .5px; padding: 5px 7px; vertical-align: top; white-space: pre-line; overflow-wrap: anywhere; }
+.plan__franja { background: var(--franja); color: #fff; font-weight: 700; font-size: 15px; text-align: center; border-color: var(--franja) !important; padding: 3px 7px !important; }
+.plan__etiqueta { font-weight: 700; vertical-align: middle !important; overflow-wrap: normal; hyphens: auto; }   /* sin partir palabras a la mitad */
+.plan__nombre { font-size: 18px; text-align: center; vertical-align: middle !important; }
+.plan__centro { text-align: center; vertical-align: middle !important; }
+.plan__derecha { text-align: right; }
+.plan__negrita { font-weight: 700; }
+.plan__chica { font-size: 13px; }
+.plan__sin-borde { border: 0 !important; }
+.plan__referencias { min-height: 60px; }
+.plan__vacio { display: inline-block; background: var(--vacio); color: #5C4310; font-size: 12px; font-weight: 400; padding: 0 6px; border-radius: 4px; }
+
+/* firmas: 2 renglones de 3, con espacio para firmar a mano */
+.autorizacion { break-inside: avoid; }
+.autorizacion__franja { margin: 0; padding: 3px 7px; }
+.firmas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 24px; margin-top: 4px; }
+.firma { text-align: center; padding-top: 6px; break-inside: avoid; }
+.firma__espacio { height: 64px; border-bottom: 1px solid #161A1D; margin: 0 6px 6px; }
+.firma p { margin: 0; }
+.firma__papel { font-weight: 700; margin: 2px 0 14px !important; }
+
+@media (max-width: 700px) {
+  .hoja { padding: 12px; }
+  .hoja__logo { height: 24px; }
+  .hoja__logo--escuela { height: 40px; }
+  .hoja__titulo { font-size: 16px; }
+  .plan td { padding: 4px; font-size: 12px; }
+  .firmas { grid-template-columns: 1fr; }
+}
+
+/* ---------- impresión / PDF: solo la hoja, tamaño carta ---------- */
+@page { size: letter portrait; margin: 14mm 12mm; }
+@media print {
+  body { background: #fff; font-size: 10.5pt; }
+  .herramientas { display: none; }
+  .hoja { width: auto; margin: 0; padding: 0; box-shadow: none; }
+  .plan tr { break-inside: avoid; }
+  .plan__fila-franja { break-after: avoid; }
+  .plan__juntos { break-inside: avoid; }
+  .plan__vacio { visibility: hidden; }       /* lo que falta sale en blanco en el papel */
+  .plan__franja { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .autorizacion { margin-top: 0; }
+}
