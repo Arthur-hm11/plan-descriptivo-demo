@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plan descriptivo del curso</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/nube.js"></script>
+  <script type="module" src="js/asistente.js"></script>
+</head>
+<body>
+  <header class="snd-header">
+  </header>
+
+  <div class="barra-titulo">
+    <div class="barra-titulo__marca">
+      <div>
+        <h1>Plan descriptivo del curso</h1>
+        <p>Versión de demostración · lo que llenes se guarda solo en tu navegador</p>
+      </div>
+    </div>
+    <span id="estado-guardado" class="estado" role="status" aria-live="polite"></span>
+  </div>
+
+  <div class="disposicion">
+    <!-- Izquierda: secciones y avance -->
+    <nav class="menu" aria-label="Secciones del plan descriptivo">
+      <button type="button" id="menu-video" class="menu__video" hidden>
+        <span class="menu__video-icono" aria-hidden="true">▶</span>
+        <span>Video tutorial<small>Cómo llenar el plan · 15 min</small></span>
+      </button>
+      <a href="plan.html" id="menu-hoja" class="menu__video" target="_blank" rel="noopener">
+        <span class="menu__video-icono" aria-hidden="true">▤</span>
+        <span>Hoja final del Plan<small>Ver, imprimir o guardar en PDF</small></span>
+      </a>
+      <button type="button" id="menu-nube" class="menu__video" hidden>
+        <span class="menu__video-icono" aria-hidden="true">☁</span>
+        <span>Guardar en la nube<small id="menu-nube-folio">Guardar o abrir con folio</small></span>
+      </button>
+      <p class="menu__titulo">Secciones</p>
+      <ol id="menu-secciones" class="menu__lista"></ol>
+      <div class="avance">
+        <p class="avance__texto" id="avance-texto"></p>
+        <div class="avance__barra" aria-hidden="true"><div class="avance__relleno" id="avance-relleno"></div></div>
+      </div>
+    </nav>
+
+    <!-- Centro: formulario de la sección -->
+    <main class="contenido" aria-labelledby="titulo-seccion">
+      <!-- Vista del video tutorial -->
+      <section id="vista-video" class="video" hidden aria-labelledby="titulo-video">
+        <p class="contenido__seccion">Video tutorial</p>
+        <h2 id="titulo-video">Cómo llenar el plan descriptivo</h2>
+        <div class="video__marco">
+          <video id="reproductor" controls preload="metadata" playsinline></video>
+        </div>
+        <p class="video__ahora" id="capitulo-actual" aria-live="polite"></p>
+        <button type="button" id="volver-seccion" class="boton boton--secundario">‹ Volver al formulario</button>
+      </section>
+
+      <!-- Vista del formulario de una sección -->
+      <div id="vista-seccion">
+      <div class="contenido__cabeza">
+        <div>
+          <p class="contenido__seccion" id="numero-seccion"></p>
+          <h2 id="titulo-seccion"></h2>
+        </div>
+        <button type="button" id="ver-video" class="boton boton--video" hidden>▶ Ver esta parte en el video</button>
+      </div>
+      <p class="contenido__ayuda">Los campos con <span class="obligatorio">*</span> son obligatorios. Al seleccionar un campo, a la derecha verás lo que pide la Guía.</p>
+      <form id="formulario" novalidate></form>
+      <div class="acciones">
+        <button type="button" id="anterior" class="boton boton--fantasma">‹ Anterior</button>
+        <span class="acciones__espacio"></span>
+        <button type="button" id="revisar" class="boton boton--secundario">Revisar sección</button>
+        <button type="button" id="siguiente" class="boton boton--primario">Siguiente sección ›</button>
+      </div>
+      </div>
+    </main>
+
+    <!-- Derecha: Guía del campo activo -->
+    <!-- Derecha (vista de video): capítulos -->
+    <aside class="capitulos" id="panel-capitulos" hidden aria-labelledby="capitulos-titulo">
+      <p class="guia__etiqueta">Capítulos</p>
+      <h3 id="capitulos-titulo">Ir a una parte del video</h3>
+      <ol id="lista-capitulos" class="capitulos__lista"></ol>
+    </aside>
+
+    <aside class="guia" aria-live="polite" aria-labelledby="guia-titulo">
+      <p class="guia__etiqueta">Guía de llenado</p>
+      <h3 id="guia-titulo">Selecciona un campo</h3>
+      <div id="guia-contenido">
+        <p class="guia__vacia">Haz clic en cualquier campo del formulario para ver su descripción, una recomendación y un ejemplo.</p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Ventana "Guardar en la nube" con el semáforo del estado (public/js/nube.js) -->
+  <dialog id="dialogo-nube" class="nube" aria-labelledby="nube-titulo">
+    <div class="nube__cabeza">
+      <h2 id="nube-titulo">Guardar en la nube institucional</h2>
+      <button type="button" id="nube-cerrar" class="nube__cerrar" aria-label="Cerrar">×</button>
+    </div>
+    <div id="nube-estado" class="nube__estado" hidden></div>
+    <section class="nube__parte">
+      <h3>Guardar este plan</h3>
+      <p>Se guardará todo lo que llevas capturado en la carpeta de este curso en la nube institucional. Puedes volver a guardarlo las veces que quieras: cada vez queda como una versión nueva.</p>
+      <div class="nube__botones">
+        <button type="button" id="nube-enviar" class="boton boton--primario">Guardar en la nube</button>
+        <button type="button" id="nube-revision" class="boton boton--secundario" hidden>Enviar a revisión</button>
+      </div>
+      <p id="nube-revision-nota" class="nube__nota" hidden></p>
+    </section>
+    <section class="nube__parte">
+      <h3>Abrir un plan guardado</h3>
+      <p>Escribe el folio y el correo del responsable del diseño. Lo que tengas ahora en este navegador se reemplazará.</p>
+      <div class="nube__recuperar">
+        <label for="nube-folio-entrada" class="nube__oculto">Folio</label>
+        <input type="text" id="nube-folio-entrada" class="nube__folio-entrada" placeholder="PD-XXXXXXXX" autocomplete="off" spellcheck="false">
+        <label for="nube-correo-entrada" class="nube__oculto">Correo del responsable del diseño</label>
+        <input type="email" id="nube-correo-entrada" placeholder="correo@ejemplo.gob.mx" autocomplete="email">
+        <button type="button" id="nube-recuperar" class="boton boton--secundario">Abrir</button>
+      </div>
+    </section>
+    <details class="nube__parte nube__dceve">
+      <summary>Revisión (solo DCEVE)</summary>
+      <p>Para abrir un plan y cambiar su estado se necesita la clave de revisión.</p>
+      <div class="nube__recuperar">
+        <label for="rev-folio" class="nube__oculto">Folio</label>
+        <input type="text" id="rev-folio" class="nube__folio-entrada" placeholder="PD-XXXXXXXX" autocomplete="off" spellcheck="false">
+        <label for="rev-clave" class="nube__oculto">Clave de revisión</label>
+        <input type="password" id="rev-clave" placeholder="Clave de revisión" autocomplete="off">
+        <button type="button" id="rev-abrir" class="boton boton--secundario">Abrir</button>
+      </div>
+      <label for="rev-estado" class="nube__etiqueta">Nuevo estado</label>
+      <select id="rev-estado">
+        <option value="">Selecciona…</option>
+        <option value="observaciones">🔴 Con observaciones</option>
+        <option value="autorizado">🟢 Autorizado</option>
+        <option value="elaboracion">⚪ Regresar a «En elaboración»</option>
+      </select>
+      <label for="rev-comentario" class="nube__etiqueta">Observaciones para la persona responsable</label>
+      <textarea id="rev-comentario" rows="3" placeholder="Qué debe corregir (obligatorio si hay observaciones)"></textarea>
+      <button type="button" id="rev-cambiar" class="boton boton--primario">Cambiar estado</button>
+    </details>
+    <p id="nube-mensaje" class="nube__mensaje" role="status" aria-live="polite"></p>
+  </dialog>
+
+  <!-- "Pregúntale a la Guía": responde solo con el texto de la Guía de llenado (public/js/asistente.js) -->
+  <button type="button" id="asistente-abrir" class="asistente-abrir" aria-controls="asistente" aria-expanded="false">
+    <span class="asistente-abrir__icono" aria-hidden="true">💬</span>
+    <span class="asistente-abrir__texto"><small>¿Dudas para llenar el plan?</small><strong>Pregúntale a la Guía ›</strong></span>
+  </button>
+  <section id="asistente" class="asistente" hidden aria-labelledby="asistente-titulo">
+    <div class="asistente__cabeza">
+      <h2 id="asistente-titulo">Pregúntale a la Guía</h2>
+      <button type="button" id="asistente-cerrar" class="nube__cerrar" aria-label="Cerrar">×</button>
+    </div>
+    <div id="asistente-conversacion" class="asistente__conversacion" role="log" aria-live="polite"></div>
+    <form id="asistente-formulario" class="asistente__pie">
+      <label for="asistente-pregunta" class="nube__oculto">Escribe tu pregunta</label>
+      <input type="text" id="asistente-pregunta" placeholder="Escribe tu pregunta" autocomplete="off" maxlength="300">
+      <button type="submit" class="boton boton--primario">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="snd-footer">
+    <span>Versión 0.1</span>
+  </footer>
+</body>
+</html>

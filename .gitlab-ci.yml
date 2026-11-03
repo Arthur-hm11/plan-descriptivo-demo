@@ -1,0 +1,11 @@
+# Publica la carpeta public/ en GitLab Pages (página fija, sin servidor).
+pages:
+  stage: deploy
+  image: alpine:latest
+  script:
+    - echo "Publicando la demostración del Plan descriptivo"
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
