@@ -1,1 +1,88 @@
-{"archivo": "", "portada": "", "capitulos": []}
+{
+ "_nota": "Video tutorial «Cómo usar la plataforma del Plan descriptivo» (reemplaza al de 15 min del Excel; respaldo en herramientas/video_excel_respaldo.json). Capítulos en segundos.",
+ "archivo": "video/tutorial.mp4",
+ "portada": "video/portada.jpg",
+ "duracion": 461.2,
+ "capitulos": [
+  {
+   "titulo": "Presentación",
+   "inicio": 0
+  },
+  {
+   "titulo": "¿Qué es el plan descriptivo?",
+   "inicio": 7.5
+  },
+  {
+   "titulo": "¿Qué aprenderás?",
+   "inicio": 57.4
+  },
+  {
+   "titulo": "La página por dentro",
+   "inicio": 68
+  },
+  {
+   "titulo": "La barra de tu plan",
+   "inicio": 84.4
+  },
+  {
+   "titulo": "La Guía de llenado",
+   "inicio": 105.3
+  },
+  {
+   "titulo": "El chatbot «Pregúntale a la Guía»",
+   "inicio": 111.2
+  },
+  {
+   "titulo": "Sección I. Datos generales",
+   "inicio": 153.4
+  },
+  {
+   "titulo": "Sección II. Fundamentación pedagógica",
+   "inicio": 199.7
+  },
+  {
+   "titulo": "Sección III. Estructura académica",
+   "inicio": 229.7
+  },
+  {
+   "titulo": "Sección IV. Estrategia didáctica",
+   "inicio": 251.4
+  },
+  {
+   "titulo": "Sección V. Evaluación del aprendizaje",
+   "inicio": 269.4
+  },
+  {
+   "titulo": "Secciones VI y VII",
+   "inicio": 293.8
+  },
+  {
+   "titulo": "Guardar y tu folio",
+   "inicio": 316.2
+  },
+  {
+   "titulo": "La Hoja final",
+   "inicio": 338.8
+  },
+  {
+   "titulo": "Modificar un plan guardado",
+   "inicio": 348.9
+  },
+  {
+   "titulo": "Enviar a la DCEVE",
+   "inicio": 389
+  },
+  {
+   "titulo": "Si la DCEVE pide cambios",
+   "inicio": 407.1
+  },
+  {
+   "titulo": "Plan autorizado",
+   "inicio": 441.8
+  },
+  {
+   "titulo": "Recuerda",
+   "inicio": 450.8
+  }
+ ]
+}

@@ -141,6 +141,7 @@ function irAlCampo(rubro) {
     if (!destino) return;
     const plegado = destino.closest("details");
     if (plegado) plegado.open = true;
+    destino.closest("details")?.setAttribute("open", "");   // si el campo está en un bloque plegado, se abre
     destino.scrollIntoView({ behavior: "smooth", block: "center" });
     if (destino.matches("input, select, textarea")) destino.focus({ preventScroll: true });
   }, 60);
