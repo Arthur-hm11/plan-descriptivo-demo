@@ -1,7 +1,11 @@
 // Hoja final del Plan descriptivo: arma la hoja "Plan descriptivo" del Excel oficial (mismos renglones, columnas A–J
 // y franjas de sección) con lo que la persona capturó en el formulario, lista para imprimir o guardar en PDF.
 // Solo LEE lo guardado en este navegador; no cambia nada.
-const CLAVE = "plan-descriptivo:v1";   // la misma que usa el formulario (app.js)
+// la misma que usa el formulario (app.js); si viene de un plan abierto en otra pestaña, llega como ?clave=
+const CLAVE = (() => {
+  const c = new URLSearchParams(location.search).get("clave") || "";
+  return /^plan-descriptivo:v1:PD-[A-Z0-9]{8}$/.test(c) ? c : "plan-descriptivo:v1";
+})();
 
 const $ = (sel) => document.querySelector(sel);
 const crear = (etiqueta, props = {}, hijos = []) => {
@@ -184,3 +188,12 @@ if (!Object.keys(datos).length) aviso.textContent = "Todavía no hay datos guard
 else if (vacios) { aviso.textContent = `Hay ${vacios} dato(s) sin llenar (marcados en amarillo). Puedes imprimir así, pero en el papel quedarán en blanco.`; aviso.classList.add("herramientas__aviso--alerta"); }
 else { aviso.textContent = "✓ Todos los datos están llenos."; aviso.classList.add("herramientas__aviso--ok"); }
 $("#imprimir").addEventListener("click", () => window.print());
+
+// «Volver al formulario»: la hoja se abre en su propia pestaña; se cierra y queda la del formulario
+const volver = document.getElementById("volver-formulario");
+volver?.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.close();
+  setTimeout(() => { volver.textContent = "Cierra esta pestaña para volver a tu plan"; }, 300);
+});
+

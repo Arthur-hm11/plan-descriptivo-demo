@@ -1,6 +1,7 @@
 // Asistente "Plan descriptivo": menú de secciones, formulario en bloques y Guía del campo activo.
 // Lo escrito se guarda solo en este navegador (localStorage) mientras se conecta la nube institucional.
-const CLAVE = "plan-descriptivo:v1";
+// Cada pestaña guarda su plan en su propia clave (la pone sesion.js); la de siempre es "plan-descriptivo:v1"
+const CLAVE = (() => { try { return sessionStorage.getItem("pd:clave") || "plan-descriptivo:v1"; } catch { return "plan-descriptivo:v1"; } })();
 
 const $ = (sel) => document.querySelector(sel);
 const crear = (etiqueta, props = {}, hijos = []) => {
@@ -488,10 +489,7 @@ function pintarSeccion() {
       form.append(crear("section", { className: "bloque", id: `grupo-${g.id}` }, [crear("h3", { className: "bloque__titulo", textContent: g.titulo }), cuerpo]));
     }
   }
-  // Botón "Ver esta parte en el video" si la sección tiene capítulo
-  const cap = video.capitulos.find((c) => c.seccion === s.id);
-  $("#ver-video").hidden = !cap;
-  $("#ver-video").onclick = cap ? () => abrirVideo(cap.inicio) : null;
+  // (El video tutorial se abre desde «Herramientas»; ya no hay botón por sección)
   // Botones: solo se avanza a secciones que ya existen
   const siguienteDisp = secciones.findIndex((x, i) => i > actual && disponible(x));
   $("#anterior").disabled = actual === 0;
@@ -619,3 +617,9 @@ $("#siguiente").addEventListener("click", () => {
 
 pintarSeccion();
 guardar();
+// la Hoja final lee el plan de ESTA pestaña
+if (CLAVE !== "plan-descriptivo:v1") $("#menu-hoja").href = `plan.html?clave=${encodeURIComponent(CLAVE)}`;
+// si otra pestaña nueva limpió el navegador, al volver a esta se vuelve a guardar lo que tiene
+window.addEventListener("focus", guardar);
+window.planListo = true;
+document.dispatchEvent(new Event("plan:listo"));   // avisa a nube.js que el formulario ya está listo

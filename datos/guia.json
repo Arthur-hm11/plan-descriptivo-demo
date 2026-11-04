@@ -270,7 +270,7 @@
       "seccion": "VII. Autorización",
       "rubro": "Elaboró diseño instruccional o de identidad gráfica",
       "descripcion": "Nombre, puesto y firma de la persona encargada de la elaboración del diseño instruccional del curso",
-      "ejemplo": "Eduardo Valverde Palancares\nSubdirector de Formación y Capacitación Institucional B\n(firma)",
+      "ejemplo": "Nombre Apellido Apellido\nSubdirector de Formación y Capacitación Institucional B\n(firma)",
       "recomendacion": "Nombre completo de la persona y del puesto",
       "prellenado": false
     },
@@ -278,7 +278,7 @@
       "seccion": "VII. Autorización",
       "rubro": "Revisó diseño instruccional",
       "descripcion": "Nombre, puesto y firma de la persona que revisó el diseño instruccional",
-      "ejemplo": "Rocío Juárez Méndez\nSubdirectora de Innovación para el Aprendizaje A\n(firma)",
+      "ejemplo": "Nombre Apellido Apellido\nSubdirectora de Innovación para el Aprendizaje A\n(firma)",
       "recomendacion": "Nombre completo de la persona y del puesto",
       "prellenado": false
     },
@@ -286,7 +286,7 @@
       "seccion": "VII. Autorización",
       "rubro": "Elaboró y revisó contenidos",
       "descripcion": "Nombre, puesto y firma de la persona encargada de revisar el contenido teorico y normativo del curso",
-      "ejemplo": "Aldo Fragoso Pastrana\nDirector General de Normatividad y Prevención\n(firma)",
+      "ejemplo": "Nombre Apellido Apellido\nDirector General de Normatividad y Prevención\n(firma)",
       "recomendacion": "Nombre completo de la persona y del puesto",
       "prellenado": false
     },
@@ -294,7 +294,7 @@
       "seccion": "VII. Autorización",
       "rubro": "Autorizó diseño instruccional o contenidos",
       "descripcion": "Nombre, puesto y firma de la persona que autorizó el plan descriptivo del curso",
-      "ejemplo": "Zazil A. Torres González\nDirectora de Capacitación Específica y Vinculación Estratégica\n(firma)",
+      "ejemplo": "Nombre Apellido Apellido\nDirectora de Capacitación Específica y Vinculación Estratégica\n(firma)",
       "recomendacion": "Nombre completo de la persona y del puesto",
       "prellenado": false
     }
